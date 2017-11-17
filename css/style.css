@@ -1,0 +1,386 @@
+.navbar{
+	font-family: 'Oswald';
+
+}
+body{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Oswald';
+}
+/* .pusit{
+	padding: 20px;
+} */
+.title{
+	font-size: 1.6em;
+}
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  	 width: 95%;
+    padding: 0; 
+}
+
+
+.ilogo{
+	color:#f0801a;
+}
+.text-center{
+	font-size: 1.6em;
+}
+.navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.hero h3{
+  color: white;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../imgs/yoga-banner11.jpg); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(http://media.merchantcircle.com/30018186/Yoga%20Banner_full.jpeg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(http://playmilehigh.com/wp-content/uploads/2016/01/yoga-banner.jpg);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+hgroup h1, hgroup h3{
+	color: white;
+}
+
+.features{
+	
+    display: inline-block;
+    padding: 5px;
+    
+    vertical-align:top;
+}
+.thumb {
+    width: 270px;
+    height: 220px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+
+.mask a:hover {
+	background: #3C3038;
+	color: #fff;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+
+}
+a{
+	text-decoration: none;
+}
+.mask {
+	display: none;
+	position: absolute;
+	top:44%;
+	left: 33%;
+}
+.mask a{
+	background: rgba(255, 255, 255, 0.74);
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+.mask a:hover{
+	text-decoration:none;
+	background:#f0801a;
+	color:#fff;
+	transition: 0.7s all;
+	-webkit-transition: 0.7s all;
+	-o-transition: 0.7s all;
+	-moz-transition: 0.7s all;
+	-ms-transition: 0.7s all;
+}
+.features:hover .mask{
+	display:block;
+}
+
+.thumbnail{
+	width: 150px;
+    height: 150px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+.tweet{
+	width: 30px;
+	height: 30px;
+}
+hr.style {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: #f0801a;
+  }
+  
+  .footer{
+  	background: #4F4E4C none repeat scroll 0 0;
+    border-top: 16px solid #3D3D3D;
+    margin: 0;
+    padding: 20px 0;
+    color: white;
+  }
+
+ .copyright { 
+ 	min-height:40px; 
+ 	background-color:#3D3D3D;
+ }
+ .copyright p { 
+ 	text-align:left; 
+ 	color:#FFF; padding:10px 0; 
+ 	margin-bottom:0px;}
+
+ .bottom_ul { 
+ 	list-style-type:none; 
+ 	float:right; 
+ 	margin-bottom:0px;}
+
+ .bottom_ul li { 
+ 	float:left; 
+ 	line-height:40px;
+ }
+ .bottom_ul li:after { 
+ 	content:"/"; 
+ 	color:#FFF; 
+ 	margin-right:8px; 
+ 	margin-left:8px;}
+
+ .bottom_ul li a { 
+ 	color:#FFF;  
+ 	font-size:12px; 
+ 	text-decoration: none;}
+
+ .connect a{
+ 	text-decoration: none;
+ }
+
+ .footertitle{
+ 	font-size: 1.2em;
+ }
+ .detail{
+ 	margin-top: 100px;
+ 	font-size: 1em;
+ }
+.pic1{
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* begin of about */
+
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin:0em 0.7em 0em 0em ;
+}
+.team{
+	padding-top: 20px;
+	padding-bottom: 80px;
+}
+
+/* end of .about */
+.row{
+  text-align: left;
+}
+.send{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active{
+  background-color: #d66600;
+}
+.btn-primary {
+   background-color: #f0801a;
+}
